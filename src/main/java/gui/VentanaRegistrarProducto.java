@@ -1,8 +1,8 @@
 package gui;
 
 import controller.ProductoController;
-import controller.MarcaController;
 import controller.CategoriaController;
+import controller.MarcaController;
 import model.Categoria;
 import model.Marca;
 
@@ -73,14 +73,14 @@ public class VentanaRegistrarProducto extends Ventana {
 
     private void generarListaMarca()  throws ClassNotFoundException{
         super.generarJLabel(this.textoMarca, "Marca:", 50, 350, 150, 30);
-        this.campoMarca = super.generarListaDesplegable(MarcaController.getIDMarcas(), 200, 350, 250, 30);
+        this.campoMarca = super.generarListaDesplegable(MarcaController.getNombreMarca(), 200, 350, 250, 30);
         this.add(this.campoMarca);
 
     }
 
     private void generarListaCategoria() throws ClassNotFoundException {
         super.generarJLabel(this.textoCategoria, "Categoria:", 50, 400, 150, 30);
-        this.campoCategoria = super.generarListaDesplegable(CategoriaController.getIDCategorias(), 200, 400, 250, 30);
+        this.campoCategoria = super.generarListaDesplegable(CategoriaController.getNombreCategoria(), 200, 400, 250, 30);
         this.add(this.campoCategoria);
     }
 
