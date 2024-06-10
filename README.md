@@ -58,4 +58,5 @@ El sistema **Inventory Plus Manager (IPM)** se organiza en diversos paquetes y c
 ## Diagrama UML
 
 A continuación se presenta el diagrama UML del proyecto **Inventory Plus Manager (IPM)**, que ilustra la estructura de clases y las relaciones entre ellas.
-![uml.png](uml.png)
+![InventoryPlusManager.png](InventoryPlusManager.png)
+
